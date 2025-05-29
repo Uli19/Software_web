@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hardware</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/accesibility.css">
+  <link rel="stylesheet" href="/css/table.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Menú principal" class="menu-circular">
+  <ul>
+    <li>
+      <a href="/index.html" aria-label="Inicio">
+        <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+        <span class="sr-only">Inicio</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/software.html" aria-label="Software">
+        <i class="bi bi-laptop-fill" aria-hidden="true"></i>
+        <span class="sr-only">Software</span>
+      </a>
+    </li>
+    <li>
+      <a href="hardware.html" aria-current="page" aria-label="Hardware">
+        <i class="bi bi-cpu-fill" aria-hidden="true"></i>
+        <span class="sr-only">Hardware</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/cv.html" aria-label="CV">
+        <i class="bi bi-file-person-fill" aria-hidden="true"></i>
+        <span class="sr-only">CV</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/contacto.html" aria-label="Contacto">
+        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+        <span class="sr-only">Contacto</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </header>
+
+  <!-- Botón flotante accesibilidad -->
+   <button id="btnAccesibilidad" aria-label="Opciones de accesibilidad" title="Opciones de accesibilidad" aria-expanded="false" aria-controls="panelAccesibilidad">
+    <i class="bi bi-universal-access-circle"></i>
+  </button>
+
+  <!-- Panel accesibilidad -->
+  <div id="panelAccesibilidad" aria-hidden="true" role="region" aria-label="Opciones de accesibilidad">
+    <button id="closePanel" aria-label="Cerrar panel de accesibilidad">✖</button>
+    <h2>Accesibilidad</h2>
+    <button id="fontIncrease">Aumentar fuente</button>
+    <button id="fontDecrease">Disminuir fuente</button>
+    <select id="fontChange" aria-label="Cambiar tipo de fuente">
+      <option value="default">Fuente normal</option>
+      <option value="arial">Arial</option>
+      <option value="verdana">Verdana</option>
+      <option value="times">Times New Roman</option>
+      <option value="monospace">Monospace</option>
+    </select>
+    <button id="toggleDarkMode">Modo Oscuro</button>
+    <button id="toggleHighContrast">Alto Contraste</button>
+    <button id="toggleColorBlind">Daltonismo</button>
+    <button id="toggleCursor">Cambiar cursor</button>
+    <button id="toggleImages">Quitar imágenes</button>
+    <button id="toggleLinks">Quitar links</button>
+    <button id="resetAccesibilidad" aria-label="Restablecer opciones de accesibilidad">Restablecer</button>
+  </div>
+
+  <main>
+    <h1>Equipo Necesario para un Ingeniero de Software (PC y Laptops)</h1>
+    
+    <table>
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>Mínimo</th>
+      <th>Recomendado</th>
+      <th>Por qué</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Característica">Procesador (CPU)</td>
+      <td data-label="Mínimo">Intel i5 / AMD Ryzen 5 (4 núcleos)</td>
+      <td data-label="Recomendado">Intel i7 / Ryzen 7 o superior (6+ núcleos)</td>
+      <td data-label="Por qué">Para compilar código, ejecutar máquinas virtuales o emuladores rápido.</td>
+    </tr>
+    <tr>
+      <td data-label="Característica">Memoria RAM</td>
+      <td data-label="Mínimo">8 GB</td>
+      <td data-label="Recomendado">16 GB o más</td>
+      <td data-label="Por qué">Múltiples programas y entornos de desarrollo requieren mucha RAM.</td>
+    </tr>
+    <tr>
+      <td data-label="Característica">Almacenamiento</td>
+      <td data-label="Mínimo">256 GB SSD</td>
+      <td data-label="Recomendado">512 GB o más SSD</td>
+      <td data-label="Por qué">SSD para rapidez en lectura/escritura y espacio para proyectos grandes.</td>
+    </tr>
+    <tr>
+      <td data-label="Característica">Tarjeta gráfica</td>
+      <td data-label="Mínimo">Integrada</td>
+      <td data-label="Recomendado">Dedicada (NVIDIA o AMD) si usas gráficos intensivos o juegos</td>
+      <td data-label="Por qué">No esencial para todos, pero útil en desarrollo de juegos o IA.</td>
+    </tr>
+    <tr>
+      <td data-label="Característica">Pantalla</td>
+      <td data-label="Mínimo">13-15 pulgadas, resolución Full HD</td>
+      <td data-label="Recomendado">15-17 pulgadas, Full HD o 4K</td>
+      <td data-label="Por qué">Más espacio para código y diseño visual.</td>
+    </tr>
+    <tr>
+      <td data-label="Característica">Sistema Operativo</td>
+      <td data-label="Mínimo">Windows 10/11, macOS, o Linux</td>
+      <td data-label="Recomendado">Depende del entorno de desarrollo</td>
+      <td data-label="Por qué">Linux y macOS son populares para desarrollo web y software libre.</td>
+    </tr>
+    <tr>
+      <td data-label="Característica">Batería (en laptops)</td>
+      <td data-label="Mínimo">4-5 horas</td>
+      <td data-label="Recomendado">8 horas o más</td>
+      <td data-label="Por qué">Para trabajar movilidad sin interrupciones.</td>
+    </tr>
+    <tr>
+      <td data-label="Característica">Puertos y conectividad</td>
+      <td data-label="Mínimo">USB, HDMI, Wi-Fi</td>
+      <td data-label="Recomendado">USB-C, Thunderbolt, Ethernet</td>
+      <td data-label="Por qué">Para conectar periféricos y redes rápidas.</td>
+    </tr>
+  </tbody>
+</table>
+  </main>
+
+  <footer>
+    <p>© 2025 Estudiante a Ingeniera de Software - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="/js/accesibilidad.js"></script>
+</body>
+</html>

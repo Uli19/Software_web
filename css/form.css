@@ -1,0 +1,53 @@
+/* Formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #004080;
+  box-shadow: 0 0 6px #66a3ff;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background-color: #002050;
+}

@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+thead {
+  background-color: #004080;
+  color: white;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f7fa;
+}
+
+tbody tr:hover {
+  background-color: #e6f0ff;
+}
+
+th {
+  font-weight: 700;
+}

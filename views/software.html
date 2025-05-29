@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Software</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/accesibility.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Menú principal" class="menu-circular">
+  <ul>
+    <li>
+      <a href="/index.html" aria-label="Inicio">
+        <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+        <span class="sr-only">Inicio</span>
+      </a>
+    </li>
+    <li>
+      <a href="software.html" aria-current="page" aria-label="Software">
+        <i class="bi bi-laptop-fill" aria-hidden="true"></i>
+        <span class="sr-only">Software</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/hardware.html" aria-label="Hardware">
+        <i class="bi bi-cpu-fill" aria-hidden="true"></i>
+        <span class="sr-only">Hardware</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/cv.html" aria-label="CV">
+        <i class="bi bi-file-person-fill" aria-hidden="true"></i>
+        <span class="sr-only">CV</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/contacto.html" aria-label="Contacto">
+        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+        <span class="sr-only">Contacto</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </header>
+
+ <!-- Botón flotante accesibilidad -->
+  <button id="btnAccesibilidad" aria-label="Opciones de accesibilidad" title="Opciones de accesibilidad" aria-expanded="false" aria-controls="panelAccesibilidad">
+    <i class="bi bi-universal-access-circle"></i>
+  </button>
+
+  <!-- Panel accesibilidad -->
+  <div id="panelAccesibilidad" aria-hidden="true" role="region" aria-label="Opciones de accesibilidad">
+    <button id="closePanel" aria-label="Cerrar panel de accesibilidad">✖</button>
+    <h2>Accesibilidad</h2>
+    <button id="fontIncrease">Aumentar fuente</button>
+    <button id="fontDecrease">Disminuir fuente</button>
+    <select id="fontChange" aria-label="Cambiar tipo de fuente">
+      <option value="default">Fuente normal</option>
+      <option value="arial">Arial</option>
+      <option value="verdana">Verdana</option>
+      <option value="times">Times New Roman</option>
+      <option value="monospace">Monospace</option>
+    </select>
+    <button id="toggleDarkMode">Modo Oscuro</button>
+    <button id="toggleHighContrast">Alto Contraste</button>
+    <button id="toggleColorBlind">Daltonismo</button>
+    <button id="toggleCursor">Cambiar cursor</button>
+    <button id="toggleImages">Quitar imágenes</button>
+    <button id="toggleLinks">Quitar links</button>
+    <button id="resetAccesibilidad" aria-label="Restablecer opciones de accesibilidad">Restablecer</button>
+  </div>
+
+  <main>
+    <h1>Lenguajes de Programación para un Ingeniero de Software</h1>
+    <p>Un ingeniero de software debe manejar diversos lenguajes de programación según el tipo de proyectos que desarrolle. 
+      Aquí te muestro los principales lenguajes, sus usos y características relevantes:</p>
+
+      <h2>Python</h2>
+      <div class="content-flex">
+        <img src="/img/python.png" alt="python" />
+        <p>Python es conocido por su sintaxis simple y legible, lo que lo hace ideal para principiantes y para desarrollo rápido. 
+          Es un lenguaje muy versátil, utilizado en desarrollo web (con frameworks como Django y Flask), ciencia de datos, 
+          automatización, inteligencia artificial, aprendizaje automático y análisis estadístico. 
+          Además, cuenta con una gran comunidad y una amplia variedad de librerías que facilitan el trabajo.
+        </p>
+      </div>
+
+      <h2>Java</h2>
+      <div class="content-flex">
+        <p>Java es un lenguaje orientado a objetos muy popular en aplicaciones empresariales, 
+          móviles (especialmente Android) y sistemas embebidos. Su característica de "escribir una vez, 
+          ejecutar en cualquier lugar" (WORA) hace que el código Java sea portable entre diferentes 
+          plataformas gracias a la máquina virtual Java (JVM). 
+          Frameworks como Spring facilitan el desarrollo de aplicaciones web robustas y escalables.
+        </p>
+        <img src="/img/java.png" alt="java" />
+      </div>
+
+      <h2>JavaScript</h2>
+      <div class="content-flex">
+        <img src="/img/javascrip.png" alt="javascrip" />
+        <p>JavaScript es el lenguaje principal del desarrollo web frontend, permitiendo crear páginas web interactivas y dinámicas. 
+          Actualmente, también se utiliza en el backend gracias a Node.js, lo que permite a los desarrolladores usar un solo 
+          lenguaje en toda la aplicación. JavaScript cuenta con una gran variedad de frameworks y librerías, como React, Angular y Vue.
+          js, que aceleran el desarrollo de interfaces de usuario modernas.
+        </p>
+      </div>
+
+      <h2>C#</h2>
+      <div class="content-flex">
+        <p>C# es un lenguaje desarrollado por Microsoft, muy usado en el desarrollo de aplicaciones para Windows y videojuegos con el motor Unity.
+          En el ámbito web, se emplea con ASP.NET para construir aplicaciones robustas y seguras. Es un lenguaje orientado a objetos 
+          con una sintaxis similar a Java, que combina facilidad de uso y potencia.
+        </p>
+        <img src="/img/c.png" alt="c" />
+      </div>
+
+      <h2>PHP</h2>
+      <div class="content-flex">
+        <img src="/img/php.png" alt="php" />
+        <p>PHP es uno de los lenguajes más usados para desarrollo backend de sitios web. 
+          Es compatible con la mayoría de servidores y sistemas operativos. Gracias a frameworks modernos como Laravel, 
+          el desarrollo con PHP es más estructurado y seguro. Es ideal para crear sitios web dinámicos y sistemas de gestión de contenidos.
+        </p>
+      </div>
+
+       <h2>SQL</h2>
+      <div class="content-flex">
+        <p>SQL (Structured Query Language) no es un lenguaje de programación tradicional, 
+          pero es esencial para la gestión y manipulación de bases de datos. Permite consultar, insertar, actualizar y 
+          borrar datos en sistemas gestores de bases de datos como MySQL, PostgreSQL o SQL Server. 
+          Todo ingeniero de software debe conocer SQL para interactuar con la información que manejan sus aplicaciones.
+        </p>
+        <img src="/img/sql.png" alt="sql" />
+      </div>
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 Estudiante a Ingeniera de Software - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="/js/accesibilidad.js"></script>
+</body>
+</html>

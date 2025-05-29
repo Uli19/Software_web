@@ -1,0 +1,191 @@
+/* Botón flotante accesibilidad */
+#btnAccesibilidad {
+  margin-top: 2rem;
+  position: fixed;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1100;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#btnAccesibilidad:hover,
+#btnAccesibilidad:focus {
+  transform: scale(1.2);
+  background-color: #002050;
+  outline: none;
+}
+
+/* Panel de accesibilidad */
+#panelAccesibilidad {  
+  position: fixed;
+  top: 85px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  max-width: 320px;
+  z-index: 1100;
+  font-size: 1rem;
+  user-select: none;
+  font-family: inherit;
+
+  /* Animación */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+#panelAccesibilidad.show {
+  max-height: 500px; 
+  opacity: 1;
+  overflow: visible;
+}
+
+#closePanel {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #444;
+  float: right;
+  cursor: pointer;
+  padding: 0 5px;
+  margin: -10px -10px 10px 0;
+}
+
+#closePanel:hover,
+#closePanel:focus {
+  color: #000;
+  outline: none;
+}
+
+#panelAccesibilidad h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #004080;
+}
+
+/* Botones y select en panel */
+#panelAccesibilidad button,
+#panelAccesibilidad select {
+  margin: 0.3rem 0.6rem 0.7rem 0;
+  padding: 0.4rem 0.9rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #004080;
+  background-color: #e6f0ff;
+  color: #004080;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+#panelAccesibilidad button:hover,
+#panelAccesibilidad select:hover,
+#panelAccesibilidad button:focus,
+#panelAccesibilidad select:focus {
+  background-color: #c2d1f0;
+  outline: none;
+}
+
+#resetAccesibilidad {
+  background-color: #cc3300;
+  color: white;
+}
+
+#resetAccesibilidad:hover,
+#resetAccesibilidad:focus {
+  background-color: #990000;
+  outline: none;
+}
+
+
+/* Estados toggled para el panel */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #222;
+}
+
+body.dark-mode main {
+  background-color: #222;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+}
+
+body.dark-mode a {
+  color: #66a3ff;
+}
+
+body.high-contrast {
+  background-color: black;
+  color: yellow;
+}
+
+body.high-contrast header {
+  background-color: black;
+  box-shadow: none;
+}
+
+body.high-contrast main {
+  background-color: black;
+  box-shadow: none;
+}
+
+body.high-contrast a {
+  color: yellow;
+  font-weight: bold;
+}
+
+body.color-blind {
+  filter: grayscale(100%) contrast(120%);
+}
+
+body.custom-cursor {
+  cursor: crosshair;
+}
+
+body.hide-images img {
+  display: none !important;
+}
+
+body.no-links a {
+  pointer-events: none;
+  color: orange !important;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Tamaños de fuente */
+body.font-size-1 {
+  font-size: 1rem;
+}
+body.font-size-2 {
+  font-size: 1.5rem;
+}
+body.font-size-3 {
+  font-size: 2rem;
+}
+body.font-size-4 {
+  font-size: 2.5rem;
+}
+body.font-size-5 {
+  font-size: 3rem;
+}

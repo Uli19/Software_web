@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/accesibility.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Menú principal" class="menu-circular">
+  <ul>
+    <li>
+      <a href="index.html" aria-current="page" aria-label="Inicio">
+        <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+        <span class="sr-only">Inicio</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/software.html" aria-label="Software">
+        <i class="bi bi-laptop-fill" aria-hidden="true"></i>
+        <span class="sr-only">Software</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/hardware.html" aria-label="Hardware">
+        <i class="bi bi-cpu-fill" aria-hidden="true"></i>
+        <span class="sr-only">Hardware</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/cv.html" aria-label="CV">
+        <i class="bi bi-file-person-fill" aria-hidden="true"></i>
+        <span class="sr-only">CV</span>
+      </a>
+    </li>
+    <li>
+      <a href="/views/contacto.html" aria-label="Contacto">
+        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+        <span class="sr-only">Contacto</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </header>
+
+  <!-- Botón flotante accesibilidad -->
+  <button id="btnAccesibilidad" aria-label="Opciones de accesibilidad" title="Opciones de accesibilidad" aria-expanded="false" aria-controls="panelAccesibilidad">
+    <i class="bi bi-universal-access-circle"></i>
+  </button>
+
+  <!-- Panel accesibilidad -->
+  <div id="panelAccesibilidad" aria-hidden="true" role="region" aria-label="Opciones de accesibilidad">
+    <button id="closePanel" aria-label="Cerrar panel de accesibilidad">✖</button>
+    <h2>Accesibilidad</h2>
+    <button id="fontIncrease">Aumentar fuente</button>
+    <button id="fontDecrease">Disminuir fuente</button>
+    <select id="fontChange" aria-label="Cambiar tipo de fuente">
+      <option value="default">Fuente normal</option>
+      <option value="arial">Arial</option>
+      <option value="verdana">Verdana</option>
+      <option value="times">Times New Roman</option>
+      <option value="monospace">Monospace</option>
+    </select>
+    <button id="toggleDarkMode">Modo Oscuro</button>
+    <button id="toggleHighContrast">Alto Contraste</button>
+    <button id="toggleColorBlind">Daltonismo</button>
+    <button id="toggleCursor">Cambiar cursor</button>
+    <button id="toggleImages">Quitar imágenes</button>
+    <button id="toggleLinks">Quitar links</button>
+    <button id="resetAccesibilidad" aria-label="Restablecer opciones de accesibilidad">Restablecer</button>
+  </div>
+
+  <main>
+    <h1>Bienvenido a Ingeniería de Software</h1>
+    <p>La ingeniería de software es una disciplina fundamental en el mundo tecnológico actual. 
+        Consiste en el diseño, desarrollo, implementación y mantenimiento de sistemas y aplicaciones 
+        que facilitan la vida cotidiana y el funcionamiento de empresas, instituciones y dispositivos. 
+        Un ingeniero de software combina conocimientos técnicos, metodologías y herramientas para crear soluciones eficientes, 
+        seguras y escalables, adaptándose a las necesidades cambiantes del mercado y los usuarios.</p>
+    <img src="/img/inge.jpg" alt="Proceso de desarrollo de software" />
+  </main>
+
+  <footer>
+    <p>© 2025 Estudiante a Ingeniera de Software - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="/js/accesibilidad.js"></script>
+</body>
+</html>
